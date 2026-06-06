@@ -123,6 +123,7 @@ a {
 .hero-copy,
 .feature-copy,
 .feature-media,
+.signup-form,
 .site-footer {
   position: relative;
   z-index: 1;
@@ -323,6 +324,56 @@ a {
 
 .feature-media.poster img {
   width: min(58%, 22rem);
+}
+
+.early-access {
+  background: linear-gradient(90deg, #fff3fb, #f5ffec);
+}
+
+.signup-form {
+  display: grid;
+  gap: 1rem;
+  width: min(100%, 34rem);
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 2px solid var(--ink);
+  border-radius: 1.25rem;
+  background: white;
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.signup-form label {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.signup-form span {
+  color: #34384c;
+  font-size: 0.85rem;
+  font-weight: 900;
+  text-transform: lowercase;
+}
+
+.signup-form input {
+  width: 100%;
+  min-height: 3.15rem;
+  border: 2px solid var(--ink);
+  border-radius: 0.8rem;
+  padding: 0.7rem 0.9rem;
+  background: #fffaf2;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.signup-form input:focus {
+  outline: 3px solid rgba(89, 104, 255, 0.28);
+  outline-offset: 2px;
+}
+
+.signup-form .button {
+  border-color: var(--ink);
+  cursor: pointer;
 }
 
 .site-footer {
