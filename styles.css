@@ -71,11 +71,13 @@ a {
   align-items: center;
   justify-content: flex-end;
   gap: 0.35rem;
+  max-width: min(82vw, 76rem);
   overflow-x: auto;
   white-space: nowrap;
 }
 
 .nav a {
+  flex: 0 0 auto;
   border-radius: 999px;
   padding: 0.68rem 0.9rem;
   color: #34384c;
